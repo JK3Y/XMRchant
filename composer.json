@@ -1,0 +1,29 @@
+{
+    "name": "JK3Y/xmrchant",
+    "type": "laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "JK3Y",
+            "email": "jacobdamador@gmail.com"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "src/rpc/jsonRPCClient.php"
+        ],
+        "psr-4": {
+            "JK3Y\\Xmrchant\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JK3Y\\Xmrchant\\XmrchantServiceProvider"
+            ],
+            "aliases": {
+                "Xmrchant": "JK3Y\\Xmrchant\\Facade"
+            }
+        }
+    }
+}
